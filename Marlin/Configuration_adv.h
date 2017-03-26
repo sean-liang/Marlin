@@ -189,7 +189,7 @@
 //This is for controlling a fan to cool down the stepper drivers
 //it will turn on when any driver is enabled
 //and turn off after the set amount of seconds from last driver being disabled again
-#define CONTROLLERFAN_PIN -1 //Pin used for the fan to cool controller (-1 to disable)
+#define CONTROLLERFAN_PIN 7 //Pin used for the fan to cool controller (-1 to disable)
 #define CONTROLLERFAN_SECS 60 //How many seconds, after all motors were disabled, the fan should run
 #define CONTROLLERFAN_SPEED 255  // == full speed
 
@@ -268,7 +268,7 @@
 // A single Z stepper driver is usually used to drive 2 stepper motors.
 // Uncomment this option to use a separate stepper driver for each Z axis motor.
 // The next unused E driver will be assigned to the second Z stepper.
-//#define Z_DUAL_STEPPER_DRIVERS
+#define Z_DUAL_STEPPER_DRIVERS
 
 #if ENABLED(Z_DUAL_STEPPER_DRIVERS)
 
@@ -457,7 +457,7 @@
   #endif
 
   // This allows hosts to request long names for files and folders with M33
-  //#define LONG_FILENAME_HOST_SUPPORT
+  #define LONG_FILENAME_HOST_SUPPORT
 
   // This option allows you to abort SD printing when any endstop is triggered.
   // This feature must be enabled with "M540 S1" or from the LCD menu.
